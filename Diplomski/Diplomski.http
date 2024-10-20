@@ -1,0 +1,6 @@
+@Diplomski_HostAddress = http://localhost:5256
+
+GET {{Diplomski_HostAddress}}/Diplomski/
+Accept: application/json
+
+###
