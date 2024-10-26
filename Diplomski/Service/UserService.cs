@@ -118,7 +118,7 @@ namespace Diplomski.Service
             var client = new SmtpClient();
 
             client.Connect("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
-            client.Authenticate("jamakovicemrah6@gmail.com", "nlxt dbyr hlco kbao");
+            client.Authenticate("jamakovicemrah6@gmail.com", /*ovdje ide password*/);
             client.Send(sendEmail);
             client.Disconnect(true);
 
@@ -174,7 +174,7 @@ namespace Diplomski.Service
                     var client = new SmtpClient();
 
                     client.Connect("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
-                    client.Authenticate("jamakovicemrah6@gmail.com", "nlxt dbyr hlco kbao");
+                    client.Authenticate("jamakovicemrah6@gmail.com", /*ovdje ide password*/);
                     client.Send(sendEmail);
                     client.Disconnect(true);
 
@@ -267,7 +267,7 @@ namespace Diplomski.Service
             var client = new SmtpClient();
 
             client.Connect("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
-            client.Authenticate("jamakovicemrah6@gmail.com", "nlxt dbyr hlco kbao");
+            client.Authenticate("jamakovicemrah6@gmail.com", /*ovdje ide password*/);
             client.Send(sendEmail);
             client.Disconnect(true);
 
