@@ -11,7 +11,7 @@ namespace Diplomski.Helpers
         public async Task<User> CheckPermission(string permission) {
             if (httpContext.HttpContext == null)
             {
-                throw new Exception("You must be logged in to add an accommodation!");
+                throw new Exception("You must be logged in!");
             }
 
             var username = httpContext.HttpContext.Items["NameIdentifier"]?.ToString();
